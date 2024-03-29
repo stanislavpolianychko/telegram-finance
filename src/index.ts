@@ -1,15 +1,7 @@
-import TelegramBotManager from "./bot/TelegramBotManager";
-import * as dotenv from 'dotenv';
+import BotManager from "./bot/BotManager";
+import loadConfig, { TG_BOT_TOKEN } from "./config/config";
 
+loadConfig();
 
-dotenv.config();
-
-const token = process.env.TG_BOT_TOKEN;
-if (token == undefined) {
-    console.error("");
-    process.exit(0);
-}
-
-
-const botManager = new TelegramBotManager(token);
-botManager.start();
+const botManager = new BotManager(TG_BOT_TOKEN);
+botManager.start().then();

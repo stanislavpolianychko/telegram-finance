@@ -1,5 +1,5 @@
 .env
 dist
-/src/config/categories/categories.json
+#/src/config/categories/categories.json
 node_modules
 yarn.lock

@@ -1,5 +1,5 @@
 {
-  "income": {
+  "expense": {
     "eatingOut": {
       "name": "Eating Out",
       "emoji": "💸",
@@ -52,7 +52,7 @@
     }
   },
 
-  "expense": {
+  "income": {
     "salary": {
       "name": "Salary",
       "emoji": "💵",

@@ -1,6 +1,8 @@
 import Category from "../models/Caterogy";
 import * as dotenv from "dotenv";
 import categoriesData from "./categories/categories.json"
+import {mybusinesslodging_v1} from "googleapis";
+import Resource$Locations$Lodging = mybusinesslodging_v1.Resource$Locations$Lodging;
 
 export const COMMANDS_OPTIONS = [
     { text: 'Expense', callback_data: 'expense' },
@@ -11,7 +13,8 @@ export const INCOME_CATEGORIES: Category[] = [];
 export const EXPENSE_CATEGORIES: Category[] = [];
 export let TG_BOT_TOKEN: string;
 export let ALLOWED_TG_USER_ID: number;
-
+export let GOOGLE_SPREAD_SHEET_ID: string;
+export let GOOGLE_SPREAD_SHEET_NAME: string;
 
 function loadDotenvConfig(): void {
     dotenv.config();
@@ -31,6 +34,20 @@ function loadDotenvConfig(): void {
     }
 
     ALLOWED_TG_USER_ID = parseInt(allowedUserId);
+
+    const googleSpreadSheetId = process.env.GOOGLE_SPREAD_SHEET_ID;
+    if (googleSpreadSheetId == undefined) {
+        process.exit(0);
+    }
+
+    GOOGLE_SPREAD_SHEET_ID = googleSpreadSheetId
+
+    const googleSpreadSheetName = process.env.GOOGLE_SPREAD_SHEET_NAME;
+    if (googleSpreadSheetName == undefined) {
+        process.exit(0);
+    }
+
+    GOOGLE_SPREAD_SHEET_NAME = googleSpreadSheetName;
 
     console.log(".env config loaded successfully")
 }

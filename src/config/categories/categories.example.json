@@ -1,8 +1,0 @@
-{
-  "categoryName": {
-    "name": "name what will be shown in discord bot",
-    "emoji": "💸", // category emoji
-    "color": "#b4a7d6", // category color
-    "type": 0 // according to enums/categoryType.ts
-  }
-}

@@ -1,5 +1,3 @@
-this telegram bot can write down your expences to google sheets<br />
-demo (ru) https://youtu.be/vBJ0yY5X99o
+telegram bot for managing expences/incomes use google tables as storage.
 
-
-
+forked from @sepezho/telegram-finances

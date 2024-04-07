@@ -1,0 +1,87 @@
+{
+  "expense": {
+    "eatingOut": {
+      "name": "Eating Out",
+      "emoji": "💸",
+      "color": "#b4a7d6"
+    },
+    "food": {
+      "name": "Food",
+      "emoji": "💸",
+      "color": "#8e7cc3"
+    },
+    "publicTransport": {
+      "name": "Public Transport",
+      "emoji": "💸",
+      "color": "#d5a6bd"
+    },
+    "taxi": {
+      "name": "Taxi",
+      "emoji": "💸",
+      "color": "#c27ba0"
+    },
+    "subs": {
+      "name": "Subscriptions",
+      "emoji": "💸",
+      "color": "#3d85c6"
+    },
+    "tech": {
+      "name": "Technology",
+      "emoji": "💸",
+      "color": "#6d9eeb"
+    },
+    "shopping": {
+      "name": "Shopping",
+      "emoji": "💸",
+      "color": "#ffe598"
+    },
+    "services": {
+      "name": "Services",
+      "emoji": "💸",
+      "color": "#ffd966"
+    },
+    "chill": {
+      "name": "Chill",
+      "emoji": "💸",
+      "color": "#f9cb9c"
+    },
+    "travel": {
+      "name": "Travel",
+      "emoji": "💸",
+      "color": "#f6b26b"
+    }
+  },
+
+  "income": {
+    "salary": {
+      "name": "Salary",
+      "emoji": "💵",
+      "color": "#b6d7a8"
+    },
+    "family": {
+      "name": "Family",
+      "emoji": "💵",
+      "color": "#a2c4c9"
+    },
+    "gifts": {
+      "name": "Gifts",
+      "emoji": "💵",
+      "color": "#76a5af"
+    },
+    "returns": {
+      "name": "Returns",
+      "emoji": "💵",
+      "color": "#d0e0e3"
+    },
+    "sells": {
+      "name": "Sells",
+      "emoji": "💵",
+      "color": "#6aa84f"
+    },
+    "swap": {
+      "name": "Currency Swap",
+      "emoji": "🔄",
+      "color": "#cccccc"
+    }
+  }
+}
